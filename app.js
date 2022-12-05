@@ -16,17 +16,5 @@ function getWeather() {
         })
         .catch(err => console.log(err));
         
-        // .then(results => {
-        //         if (results === "Not Found") {
-        //             // show alert
-        //             Alert("Weather  not found", "alert alert-danger");
-                    
-        //         } else {
-        //             // show weather 
-        //             ui.paint(results);
-        //             console.log(results);
-        //         }
-        //     });
-            
 };
 
