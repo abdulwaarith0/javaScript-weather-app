@@ -4,7 +4,7 @@ class UI {
         this.desc = document.getElementById("w-desc");
         this.temp = document.getElementById("w-temp");
         this.details = document.getElementById("w-details");
-        this.icon = document.getElementById("w-icon").src = `https://openweathermap.org/img/w/04n.png`;
+        this.icon = document.getElementById("w-icon");
         this.humidity = document.getElementById("w-humidity");
         this.wind = document.getElementById("w-wind");
         this.visibility = document.getElementById("w-visibility")
@@ -18,7 +18,7 @@ class UI {
         this.city.textContent = `${weather.name}, ${weather.sys.country}`;
 
         this.temp.textContent = `Temperature: ${weather.main.temp}°C`;
-        this.icon = ` ${weather.weather[0].icon}`;
+        this.icon.src = `https://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`;
 
         this.desc.textContent = `Feels Like ${weather.main.feels_like}°C. ${weather.weather[0].description}. ${weather.weather[0].main}`;
         this.humidity.textContent = `Relative Humidity: ${weather.main.humidity}%`;
